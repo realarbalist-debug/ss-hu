@@ -16,25 +16,6 @@
           "path": "/@CxlVlns-sshu"
         }
       }
-    },
-    {
-      "listen": "0.0.0.0",
-      "port": 8080,
-      "protocol": "trojan",
-      "tag": "trojan-ws",
-      "settings": {
-        "clients": [
-          {
-            "password": "CxlVlns7000"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/@CxlVlns-trojanws"
-        }
-      }
     }
   ],
   "outbounds": [
