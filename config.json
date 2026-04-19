@@ -3,8 +3,65 @@
     {
       "listen": "0.0.0.0",
       "port": 8080,
+      "protocol": "vless",
+      "tag": "vless-ws",
+      "settings": {
+        "clients": [
+          {
+            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/CxlVlnsws"
+        }
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8080,
+      "protocol": "vless",
+      "tag": "vless-hu",
+      "settings": {
+        "clients": [
+          {
+            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "httpSettings": {
+          "path": "/calVlnshu"
+        }
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8080,
       "protocol": "shadowsocks",
-      "tag": "shadowsocks-hu",
+      "tag": "ss-ws",
+      "settings": {
+        "method": "aes-256-gcm",
+        "password": "CxlVlns7000",
+        "network": "tcp,udp"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/cxlVlnssws"
+        }
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8080,
+      "protocol": "shadowsocks",
+      "tag": "ss-hu",
       "settings": {
         "method": "aes-256-gcm",
         "password": "CxlVlns7000",
@@ -12,8 +69,8 @@
       },
       "streamSettings": {
         "network": "httpupgrade",
-        "httpupgradeSettings": {
-          "path": "/@CxlVlns-sshu"
+        "httpSettings": {
+          "path": "/calVlnsshu"
         }
       }
     }
