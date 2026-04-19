@@ -1,19 +1,16 @@
-FROM gojolvl99/gojo-v2-core:latest
+FROM gojolvl99/gojo-8n1:latest
 
 LABEL maintainer="Cxlvins"
-LABEL description="Cloud Run Xray HTTP Upgrade (Shadowsocks HU only)"
+LABEL description="Cloud Run Xray (Gojo 8-in-1)"
 LABEL version="3.5"
 
 WORKDIR /etc/xray
 
 COPY config.json /etc/xray/config.json
 
-# Cloud Run uses ONLY one port
 EXPOSE 8080
 
-# reduce overhead
 ENV XRAY_LOGLEVEL=warning
 
-# run xray
 ENTRYPOINT ["xray"]
 CMD ["-config", "/etc/xray/config.json"]
