@@ -22,7 +22,7 @@
     },
     {
       "listen": "0.0.0.0",
-      "port": 8080,
+      "port": 8081,
       "protocol": "vless",
       "tag": "vless-hu",
       "settings": {
@@ -42,7 +42,7 @@
     },
     {
       "listen": "0.0.0.0",
-      "port": 8080,
+      "port": 8082,
       "protocol": "shadowsocks",
       "tag": "ss-ws",
       "settings": {
@@ -59,7 +59,7 @@
     },
     {
       "listen": "0.0.0.0",
-      "port": 8080,
+      "port": 8083,
       "protocol": "shadowsocks",
       "tag": "ss-hu",
       "settings": {
